@@ -1,0 +1,47 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+margin: 0;
+}
+/* Tabelen Grosse bestimmen */
+table{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(73, 158, 123);
+    color: rgb(155, 165, 174);
+}
+/* Zellen Breite Zentrieren schrift Grösse */
+td{
+    width: 25%;
+    text-align: center;
+    background-color: rgb(16, 126, 80);
+    font-size: 24px;
+}
+td:hover{
+    background-color: rgb(17, 79, 53);
+    cursor: pointer;
+}
+#resultArea{
+    height: 30vh;
+    background-color: rgb(66, 143, 111);
+    color: antiquewhite;
+    font-size: 64px;
+    /*Woder Text sein soll*/
+    display: flex;
+    /* X achse bestimen */
+    justify-content: flex-end;
+    /* y achse bestimen */
+    align-items: flex-end;
+    padding: 24px;
+    /* box-sizing ermöglicht das es kein scrol balcken entschteeht */
+    box-sizing: border-box;
+}
+#gleich{
+    background-color:  rgb(31, 187, 83);
+}
+#gleich:hover{
+    background-color: rgb(77, 190, 114);
+    cursor: pointer;
+}
+.highlight{
+    background-color: rgb(0, 64, 70);
+}

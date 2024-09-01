@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="taschRech.js"></script>
+</head>
+<body>
+     <div id="resultArea">
+        
+    </div>
+    <!--Tabele Erstellen-->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td onclick="deletetast()">DEL</td>
+        </tr>
+        <!--2 Zeile-->
+        <tr>
+            <td onclick="aritOp(7)">7</td>
+            <td onclick="aritOp(8)">8</td>
+            <td onclick="aritOp(9)">9</td>
+            <td onclick="aritOp(' / ')" class="highlight">/</td>
+        </tr>
+        <!--3 Zeile-->
+        <tr>
+            <td onclick="aritOp(4)">4</td>
+            <td onclick="aritOp(5)">5</td>
+            <td onclick="aritOp(6)">6</td>
+            <!--im JS kann man nur mit * mal operation machen-->
+            <td onclick="aritOp(' * ')" class="highlight">x</td>
+        </tr>
+        <!--4 Zeile-->
+        <tr>
+            <td onclick="aritOp(1)">1</td>
+            <td onclick="aritOp(2)">2</td>
+            <td onclick="aritOp(3)">3</td>
+            <td onclick="aritOp(' + ')" class="highlight">+</td>
+        </tr>
+        <!--5 Zeile-->
+        <tr>
+            <td onclick="aritOp(0)">0</td>
+            <!--im JS muss statt , ein . sein-->
+            <td onclick="aritOp(' . ')">,</td>
+            <td onclick="ergebnis()" id="gleich">=</td>
+            <td onclick="aritOp(' - ')" class="highlight">-</td>
+        </tr>
+    </table>
+</body>
+</html>
